@@ -96,20 +96,13 @@ body.dark .display {
   margin-bottom: 20px; /* space at the bottom of the e.g. 22°C */
 }
 
-/* Start of addition 
- the images are dark by default; so, we use the filter property to invert the colors of the images ( black-white ), making them appear white on a dark ( dark blue ) background. */
-*/ .humidity-icon {
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  filter: invert(1);
-}
-
+/* Make small icons visible on dark background by inverting + boosting brightness */
+.humidity-icon,
 .wind-icon {
   width: 48px;
   height: 48px;
   object-fit: contain;
-  filter: invert(1);
+  filter: invert(1) brightness(1.6);
 }
 
 /* End of addition */
