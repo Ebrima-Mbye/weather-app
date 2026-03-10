@@ -1,43 +1,57 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>WEATHER APP</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="search">
-            <input type="text" id="city-input" placeholder="Enter city name" />
-            <button id="search-btn">Search</button>
-        </div>
-        <div id="weather-result"></div>
-        <div class="weather">
-            <img src="images/weather.jpeg" alt="weather icon" class="weather-icon" />
-            <h1 class="temp">22°C</h1>
-            <h1 class="city">New York</h1>
-        </div>
-        <div class="description">
-            <div class="col">
-                <img src="images/humidity.jpeg" alt="Humidity" />
-                <p class="humidity">60%</p>
-                <p>Humidity</p>
-            </div>
-            <div class="col">
-                <img src="images/wind.jpeg" alt="Wind Speed" />
-                <p class="wind">5 km/h</p>
-                <p>Wind Speed</p>
-            </div>
-        </div>
-        <div class="button">
-            <button onclick="toggleDarkMode()">🌙</button>
-            </divclass>
-        </div>
+      <div class="search">
+        <input type="text" id="city-input" placeholder="Enter city name" />
+        <button id="search-btn">Search</button>
+      </div>
 
-        <script src="script.js"></script>
-</body>
+      <div id="weather-result"></div>
 
+      <div class="weather">
+        <img
+          src="https://openweathermap.org/img/wn/01d@2x.png"
+          alt="weather icon"
+          class="weather-icon"
+        />
+        <h1 class="temp">22°C</h1>
+        <h1 class="city">New York</h1>
+      </div>
+
+      <div class="description">
+        <div class="col">
+          <img
+            class="humidity-icon"
+            src="https://img.icons8.com/ios-filled/100/000000/humidity.png"
+            alt="Humidity"
+          />
+          <p class="humidity">60%</p>
+          <p>Humidity</p>
+        </div>
+        <div class="col">
+          <img
+            class="wind-icon"
+            src="https://img.icons8.com/ios-filled/100/000000/windy-weather.png"
+            alt="Wind Speed"
+          />
+          <p class="wind">5 km/h</p>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+
+      <div class="button">
+        <button id="dark-toggle">🌙</button>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>
